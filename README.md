@@ -4,7 +4,7 @@ This repository is a template repository to build application on top of WHF fork
 
 # Start your project using this template
 
-[Click to generate a project](https://github.com/workhard-finance/template/generate)
+[Click to generate a project](https://github.com/workhard-finance/starter/generate)
 
 # Run tests
 
