@@ -2,9 +2,9 @@
 
 This repository is a template repository to build application on top of WHF forked DAO.
 
-# Example project
+# Start your project using this template
 
-Here is the [example fork](#fork).
+[Click to generate a project](https://github.com/workhard-finance/template/generate)
 
 # Run tests
 
