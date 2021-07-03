@@ -21,6 +21,13 @@ task('accounts', 'Prints the list of accounts', async (args, hre) => {
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
+const forking = { url: process.env.FORK_URL }
+if (!forking.url) {
+  console.error('----------WHF starter recommendation----------')
+  console.error('We recommend you to use forked mainnet.')
+  console.error('Please create .env and setup FORK_URL with your Alchemy API endpoint or other web3 endpoint.')
+  console.error('----------------------------------------------')
+}
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -38,11 +45,7 @@ const config: HardhatUserConfig = {
   },
   networks: {
     hardhat: {
-      blockGasLimit: 9999999,
-      mining: {
-        auto: true,
-      },
-      forking: { url: process.env.FORK_URL },
+      forking,
     },
   },
   typechain: {

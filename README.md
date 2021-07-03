@@ -6,6 +6,12 @@ This repository is a template repository to build application on top of WHF fork
 
 [Click to generate a project](https://github.com/workhard-finance/starter/generate)
 
+# Install dependency
+
+```shell
+$ yarn
+```
+
 # Run tests
 
 1. To run the tests, you should use hardhat's forking feature.
