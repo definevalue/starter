@@ -35,7 +35,6 @@ $ yarn
     ```shell
     $ yarn test
     ```
-
 # Deploy your contracts
 
 1. Make sure that you successfully forked WHF. We recommend you to use [the Web UI](https://app.workhard.finance/dao)
@@ -51,6 +50,11 @@ $ yarn
     ```
 4. Go to Github Releases menu and write a new release with tagging.
 5. Go to your frontend app & import the deployed artifacts.
+
+# Github Actions
+
+Go to your Github repository's Settings > Secrets > Actions tab and set ALCHEMY_API key.
+
 
 # License
 

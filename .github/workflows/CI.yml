@@ -43,7 +43,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn
       - run: yarn build
+        env:
+          FORK_URL: https://eth-mainnet.alchemyapi.io/v2/${{ secrets.ALCHEMY_API }}
       - run: yarn hardhat coverage
         env:
           NODE_OPTIONS: --max_old_space_size=4096
+          FORK_URL: https://eth-mainnet.alchemyapi.io/v2/${{ secrets.ALCHEMY_API }}
       - uses: codecov/codecov-action@v1
