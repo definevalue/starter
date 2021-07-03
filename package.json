@@ -1,11 +1,11 @@
 {
-  "name": "@workhard/template",
+  "name": "@workhard/starter",
   "description": "Template Repository for WHF Fork",
   "version": "1.0.0",
   "homepage": "https://workhard.finance",
   "repository": {
     "type": "git",
-    "url": "https://github.com/workhard-finance/fork"
+    "url": "https://github.com/workhard-finance/starter"
   },
   "keywords": [
     "fork",
